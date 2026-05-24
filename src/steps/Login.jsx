@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './Login.css'
 
-const CLASSES = ['5А','5Б','5В','6А','6Б','6В','7А','7Б','7В']
-const GROUPS  = ['1-р бүлэг','2-р бүлэг','3-р бүлэг','4-р бүлэг']
+const CLASSES = ['1','2','3','4','5','6','7','8','9','10','11','12']
+const GROUPS  = ['А','Б','В','Г']
 
 export default function Login({ onDone }) {
   const [cls,   setCls]   = useState('')
@@ -63,7 +63,7 @@ export default function Login({ onDone }) {
         </div>
 
         <button className="btn-primary" onClick={handleStart} disabled={!ready}>
-          Эхлэх →
+          Эхлэх
         </button>
       </div>
     </div>

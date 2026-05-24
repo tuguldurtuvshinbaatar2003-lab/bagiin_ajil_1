@@ -32,8 +32,8 @@ export default function App() {
       <header className="app-header">
         <span className="app-icon">🤝</span>
         <div>
-          <h1 className="app-title">Тус</h1>
-          <p className="app-sub">Монгол хэлний үлгэр · 6-р анги</p>
+          <h1 className="app-title">Багшийн туслах</h1>
+          <p className="app-sub">Монгол хэлний үлгэр - 3-р анги</p>
         </div>
       </header>
 

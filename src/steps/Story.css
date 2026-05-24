@@ -8,19 +8,28 @@
 
 .slide-scene {
   background: var(--slide-bg, #fef3f0);
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
   position: relative;
+  overflow: hidden;
 }
-.slide-emoji { font-size: 52px; }
+.slide-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
 .slide-num {
   position: absolute;
   bottom: 8px;
   right: 12px;
   font-size: 11px;
-  color: #aaa;
+  color: #fff;
+  padding: 2px 8px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 99px;
 }
 
 .slide-body { padding: 1.25rem; }
