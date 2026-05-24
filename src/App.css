@@ -1,0 +1,111 @@
+.page {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 4rem;
+}
+
+/* ── Header ── */
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 1.5rem;
+}
+.app-icon { font-size: 40px; line-height: 1; }
+.app-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+.app-sub { font-size: 13px; color: #888; margin-top: 2px; }
+
+/* ── Progress ── */
+.progress-wrap { margin-bottom: 1.75rem; }
+.progress-track {
+  height: 6px;
+  background: #ede8e4;
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.progress-fill {
+  height: 100%;
+  background: #e8513a;
+  border-radius: 99px;
+  transition: width 0.4s ease;
+}
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+}
+.prog-label {
+  font-size: 11px;
+  color: #bbb;
+}
+.prog-label.done { color: #e8513a; }
+.prog-label.active { color: #e8513a; font-weight: 600; }
+
+/* ── Shared card ── */
+.card {
+  background: #fff;
+  border: 1px solid #f0e8e4;
+  border-radius: 14px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* ── Shared buttons ── */
+.btn-primary {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: #e8513a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.15s;
+}
+.btn-primary:hover  { background: #c8402a; }
+.btn-primary:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.btn-secondary {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  color: #888;
+  border: 1px solid #e8e0dc;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.15s;
+}
+.btn-secondary:hover { background: #fef3f0; }
+
+/* ── User badge ── */
+.user-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fef3f0;
+  border: 1px solid #f0c8c0;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: #c0402a;
+  margin-bottom: 1rem;
+}
+
+/* ── Section title ── */
+.section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e8513a;
+  margin-bottom: 12px;
+}

@@ -1,0 +1,85 @@
+.qcard {
+  background: #fff;
+  border: 1px solid #f0e8e4;
+  border-radius: 14px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.qcard-num {
+  font-size: 11px;
+  color: #bbb;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.qcard-q {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.qcard-opts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.opt {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #e8e0dc;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 15px;
+  color: #1a1a1a;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s;
+  line-height: 1.4;
+}
+
+.opt:hover:not(:disabled) {
+  border-color: #e8513a;
+  background: #fef3f0;
+}
+
+.opt-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1.5px solid currentColor;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.opt-selected {
+  border-color: #e8513a;
+  background: #fef3f0;
+  color: #e8513a;
+}
+
+.opt-correct {
+  border-color: #2e7d32 !important;
+  background: #e8f5e9 !important;
+  color: #1b5e20 !important;
+}
+
+.opt-wrong {
+  border-color: #c62828 !important;
+  background: #fdecea !important;
+  color: #b71c1c !important;
+}
+
+.opt:disabled { cursor: not-allowed; }

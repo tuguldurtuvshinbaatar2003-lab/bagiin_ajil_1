@@ -1,0 +1,81 @@
+.story-card {
+  background: #fff;
+  border: 1px solid #f0e8e4;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.slide-scene {
+  background: var(--slide-bg, #fef3f0);
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.slide-emoji { font-size: 52px; }
+.slide-num {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  font-size: 11px;
+  color: #aaa;
+}
+
+.slide-body { padding: 1.25rem; }
+.slide-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+.slide-para {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 10px;
+}
+.slide-para:last-of-type { margin-bottom: 0; }
+
+.slide-quote {
+  font-size: 15px;
+  font-style: italic;
+  color: #e8513a;
+  border-left: 3px solid #e8513a;
+  padding: 8px 14px;
+  margin: 12px 0;
+  line-height: 1.7;
+}
+
+.suuramj {
+  background: #fef3f0;
+  border: 1px solid #f0c8c0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #c0402a;
+  margin-top: 14px;
+  line-height: 1.6;
+}
+
+.slide-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 8px;
+}
+
+.dots { display: flex; gap: 7px; align-items: center; }
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #e0d8d4;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+}
+.dot-active { background: #e8513a; transform: scale(1.2); }
